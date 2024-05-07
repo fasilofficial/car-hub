@@ -37,9 +37,20 @@ export interface Car {
 export interface CarCardProps {
   car: Car;
 }
-
 export interface CarDetailsProps {
   car: Car;
   isOpen: boolean;
   closeModal: () => void;
+}
+
+export interface SearchButtonProps {
+  otherClasses: string;
+}
+
+export interface FilterProps {
+  manufacturer: string;
+  year: number;
+  fuel: string;
+  limit: number;
+  model: string;
 }
