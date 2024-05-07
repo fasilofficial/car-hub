@@ -5,6 +5,7 @@ import { calculateCarRent } from "@/utils";
 import Image from "next/image";
 import { useState } from "react";
 import CustomButton from "./CustomButton";
+import { CarDetails } from "./";
 
 const CarCard = ({ car }: CarCardProps) => {
   const { city_mpg, year, make, model, transmission, drive } = car;
@@ -76,6 +77,12 @@ const CarCard = ({ car }: CarCardProps) => {
           />
         </div>
       </div>
+
+      <CarDetails
+        isOpen={IsOpen}
+        closeModal={() => setIsOpen(false)}
+        car={car}
+      />
     </div>
   );
 };
