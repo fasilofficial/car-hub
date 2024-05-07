@@ -5,8 +5,8 @@ export interface CustomButtonProps {
   btnType?: "button" | "submit";
   containerStyles?: string;
   handleClick?: MouseEventHandler<HTMLButtonElement>;
-  textStyles: string;
-  rightIcon: string;
+  textStyles?: string;
+  rightIcon?: string;
   isDisabled?: boolean;
 }
 
@@ -58,4 +58,8 @@ export interface FilterProps {
   fuel: string;
   limit: number;
   model: string;
+}
+export interface ShowMoreProps {
+  isNext: boolean;
+  pageNumber: number;
 }
