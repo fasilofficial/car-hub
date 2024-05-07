@@ -18,7 +18,9 @@ const CarCard = ({ car }: CarCardProps) => {
   return (
     <div className="car-card group">
       <div className="car-card__content">
-        <h2 className="car-card__content-title">Make: {model}</h2>
+        <h2 className="car-card__content-title">
+          {make} {model}
+        </h2>
       </div>
 
       <div className="flex w-full justify-between items-center">
