@@ -217,3 +217,25 @@
   @apply cursor-default select-none py-2 pl-10 pr-4;
 }
 /* END: search manufacturer styles */
+
+/* CUSTOM SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
