@@ -9,7 +9,7 @@ export const fetchCars = async ({
 }: FilterProps) => {
   const url = "https://cars-by-api-ninjas.p.rapidapi.com/v1/cars";
   const headers = {
-    "X-RapidAPI-Key": "9195255473msh062968d23455a1cp1c7c64jsn151f758d0cbb",
+    "X-RapidAPI-Key": process.env.NEXT_PUBLIC_CARS_API_KEY || '',
     "X-RapidAPI-Host": "cars-by-api-ninjas.p.rapidapi.com",
   };
 
